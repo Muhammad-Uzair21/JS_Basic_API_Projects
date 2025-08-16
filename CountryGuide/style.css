@@ -1,0 +1,114 @@
+/* Reset browser defaults and apply border-box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full viewport setup with background color */
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #3d64e4; /* Blue background */
+}
+
+/* Main container for the app/card */
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the card */
+    width: 80vw;
+    max-width: 37.5em; /* Keep a clean max size */
+    background-color: white;
+    padding: 3em 2.5em; /* Internal spacing */
+    border-radius: 0.7em; /* Rounded edges */
+    box-shadow: 0em 1.25em 1.8em rgba(8, 21, 61, 0.25); /* Subtle shadow */
+}
+
+/* Search bar wrapper - grid for input + button */
+.search-wrap {
+    display: grid;
+    grid-template-columns: 9fr 3fr; /* Input takes more space than button */
+    gap: 1.75em; /* Spacing between input and button */
+}
+
+/* Search button styles */
+#search {
+    padding: 0.8em 0;
+    color: white;
+    font-size: 1em;
+    background-color: #3d64e4;
+    border: none;
+    border-radius: 1.5em;
+    cursor: pointer;
+}
+
+/* Hover effect for search button */
+#search:hover {
+    color: #3d64e4;
+    background-color: white;
+    border: 1px solid #3d64e4;
+    border-radius: 1.5em;
+    transition: all 0.5s ease; /* Smooth hover transition */
+    font-weight: 700;
+}
+
+/* Country input field */
+#country {
+    border: none;
+    outline: none;
+    font-size: 1em;
+    border-bottom: 2px solid #3d64e4; /* Blue underline */
+    padding: 0 0.62em;
+    color: #222a43; /* Dark navy text */
+}
+
+/* Result section container */
+#result {
+    margin-top: 1.25em;
+}
+
+/* Flag image styling */
+.main .flag-img {
+    display: block;
+    width: 45%;
+    min-width: 7.5em;
+    margin: 1.8em auto 1.2em auto; /* Center horizontally with spacing */
+}
+
+/* Country name heading */
+.main h2 {
+    font-weight: 600;
+    color: #222a43;
+    text-align: center;
+    text-transform: uppercase; /* All caps */
+    letter-spacing: 2px; /* Spaced-out letters */
+    margin-bottom: 1.8em;
+}
+
+/* Wrapper for each data field */
+.data-wrapper {
+    margin-bottom: 1em;
+    letter-spacing: 0.3px;
+}
+
+/* Label (field name) style */
+.main h4 {
+    display: inline;
+    font-weight: 500;
+    color: #222a43;
+}
+
+/* Data value style */
+.main span {
+    color: #5d6274;
+}
+
+/* Error/Not found message */
+.main h3 {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #ff465a; /* Red for errors */
+}
