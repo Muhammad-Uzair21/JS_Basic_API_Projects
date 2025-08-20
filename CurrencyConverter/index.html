@@ -10,19 +10,20 @@
     <div class="container">
         <div class="wrap">
             <img src="app-icon.svg" alt="" class="icon">
-            <h2>Currency Converter</h2>
+            <h1>Currency Converter</h1>
         </div>
         <label for="amount">Amount:</label>
         <input type="number" id="amount" value="100">
         <div class="dropdowns">
-            <select name="" id="From"></select>
-            <select name="" id="to"></select>
+            <select id="from"></select>
+            <select id="to"></select>
         </div>
         <button id="convert-btn">Convert</button>
+        <p id="result"></p>
     </div>
     
-    <script src="main.js"></script>
-    <script src="api-key.js"></script>
     <script src="country-codes.js"></script>
+    <script src="api-key.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

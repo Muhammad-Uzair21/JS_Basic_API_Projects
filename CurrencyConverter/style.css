@@ -5,6 +5,8 @@
 }
 html, body{
     height: 100%;
+    border: none;
+    outline: none;
     width: 100%;
     background-color: #9873fe;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -29,4 +31,77 @@ html, body{
 }
 .icon{
     width: 9.75em;
+}
+h1{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+label{
+    display: block;
+    font-weight: 600;
+}
+
+#amount{
+    font-weight: 400;
+    outline: none;
+    font-size: 1.2em;
+    width: 100%;
+    display: block;
+    border: none;
+    border-bottom: 2px solid #02002c;
+    margin-bottom: 2em;
+    color: #7a789d;
+    padding: 0.5em;
+}
+#amount:focus{
+    color: #9873fe;
+    border-bottom: 2px solid #9873fe;
+}
+.dropdowns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+select{
+    width: 100%;
+    padding: 0.5em;
+    appearance: none;
+    border-radius: 0.2em;
+    font-size: 1em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #9873fe;
+    background-image: url("arrow-down.svg"); 
+    background-repeat: no-repeat;
+    background-position: right 15px top 50%, center;
+    background-size: 20px 20px;
+    color: #ffffff;
+}
+
+select option{
+    color: #02002c;
+    background-color: #ffffff;
+}
+
+button{
+    width: 100%;
+    margin-top: 2em;
+    padding: 1em 0;
+    background-color: #9873fe;
+    color: #ffffff;
+    font-size: 1em;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-weight: 600;
+}
+#result{
+    font-size: 1em;
+    background-color: #e5dbff;
+    color: #02002c;
+    margin-top: 1em;
+    text-align: center;
+    padding: 0.8em 0;
 }
