@@ -15,8 +15,9 @@
 
 html, body{
     height: 100vh;
-    background: linear-gradient(135deg, var(--blue-1), var(--blue-2))
-
+    background: linear-gradient(135deg, var(--blue-1), var(--blue-2));
+    font-family: 'Helvetica Neue', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+    
 }
 
 .wrapper{
@@ -46,15 +47,15 @@ html, body{
     border-radius: 50%;
 }
 .shape1{
-    height: 13em;
-    width: 13em;
-    right: -5.5em;
+    height: 11em;
+    width: 11em;
+    right: -3.5em;
     top: 1.8em;
 }
 .shape2{
-    width: 11em;
-    height: 11em;
-    bottom: -3.7em;
+    width: 9em;
+    height: 9em;
+    bottom: -1.7em;
     left: -2.5em;
 }
 
@@ -91,4 +92,74 @@ html, body{
     color: var(--blue-2);
     cursor: pointer;
     border-radius: 0.3em;
+}
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: 10px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#result h2{
+    color: var(--white);
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    margin: 1em 0;
+    text-transform: uppercase;
+}
+
+.weather, .desc {
+    font-size: 0.9em;
+    color: var(--off-White);
+    letter-spacing: 0.2em;
+    line-height: 2em;
+    text-transform: uppercase;
+}
+#result img{
+    width: 6.2em;
+    filter:drop-shadow(0 1.8em 3.7em var(--shadow));
+}
+
+#result h1{
+    font-size: 4em;
+    margin: 0.3em 0 0.7em 0;
+    line-height: 0;
+    font-weight: 500;
+    color: var(--white);
+}
+.temp-cont{
+    display: flex;
+    justify-content: center;
+}
+.temp-cont div{
+    padding: 0.3em 1em;
+}
+
+.temp-cont div:first-child{
+    border-right: 1px solid var(--off-White);
+}
+.temp-cont .title{
+    color: var(--white);
+    font-weight: 600;
+}
+.temp-cont .temp{
+    font-weight: 300;
+    color: var(--off-White)
+}
+
+.msg{
+    color: var(--white);
+    font-weight: 600;
+    margin: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
