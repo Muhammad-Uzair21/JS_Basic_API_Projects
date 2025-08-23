@@ -1,1 +1,1 @@
-let apiKey = "3f661e5c4490f7d6bcf8f61479fd8bb2"
+let apiKey = "Your openweathermap Api key here"
